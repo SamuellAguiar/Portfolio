@@ -117,7 +117,7 @@ export default function ImgMediaCard() {
                                 />
                                 <CardContent style={{ padding: '20px' }}>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Projeto 03
+                                        Clone Login Instagram
                                     </Typography>
                                     <Typography variant="body2">
                                         O projeto consiste em criar uma página web clone da página de login do Instagram com modo dark. Possuindo também links que redirecionam para as páginas de cadastro e recuperação de senha. Além de todos os links funcionais, a página é responsiva.
