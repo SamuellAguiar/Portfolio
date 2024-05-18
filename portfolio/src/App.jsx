@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from './Components/NavBar';
 import Init from './Components/Init.jsx';
-import AboutMe from './Components/AboutMe.jsx';
 import Experience from './Components/Experience.jsx';
 import Technologies from './Components/Technologies.jsx';
 import Projects from './Components/Projects.jsx';
@@ -16,9 +15,6 @@ const App = () => {
       <div style={{ backgroundColor: '#191919' }}>
         <Element name="início">
           <Init />
-        </Element>
-        <Element name="sobre">
-          <AboutMe />
         </Element>
         <Element name="experiencia">
           <Experience />
