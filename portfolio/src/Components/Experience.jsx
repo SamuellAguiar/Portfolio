@@ -11,7 +11,7 @@ export default function Experience() {
         <div style={{
             display: 'left',
             padding: '20px',
-            paddingTop: '80px',
+            paddingTop: '30px',
             paddingBottom: '60px',
             fontSize: '20px',
             flexDirection: 'column',
