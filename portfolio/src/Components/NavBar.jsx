@@ -14,7 +14,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link as ScrollLink } from 'react-scroll';
 
-const pages = ['Início', 'Sobre', 'Experiencia', 'Tecnologias', 'Projetos', 'Contato'];
+const pages = ['Início', 'Experiencia', 'Tecnologias', 'Projetos', 'Contato'];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
