@@ -58,7 +58,7 @@ export default function ImgMediaCard() {
                                     alt="green iguana"
                                     height="230"
                                     width="375"
-                                    image="../src/assets/Pizzaria.png"
+                                    image="/assets/Pizzaria.png"
                                 />
                                 <CardContent style={{ padding: '20px' }}>
                                     <Typography gutterBottom variant="h5" component="div">
@@ -86,7 +86,7 @@ export default function ImgMediaCard() {
                                     alt="green iguana"
                                     height="230"
                                     width="375"
-                                    image="../src/assets/VelozaCLUB.png"
+                                    image="/assets/VelozaCLUB.png"
                                 />
                                 <CardContent style={{ padding: '20px' }}>
                                     <Typography gutterBottom variant="h5" component="div">
@@ -113,7 +113,7 @@ export default function ImgMediaCard() {
                                     alt="green iguana"
                                     height="230"
                                     width="375"
-                                    image="../src/assets/Login-Instagram.png"
+                                    image="/assets/Login-Instagram.png"
                                 />
                                 <CardContent style={{ padding: '20px' }}>
                                     <Typography gutterBottom variant="h5" component="div">

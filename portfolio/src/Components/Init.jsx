@@ -26,7 +26,7 @@ const Init = () => {
                 padding: '20px',
                 paddingTop: '50px',
             }}>
-                <img src="../src/assets/Eu.jpg" alt="" style={{
+                <img src="/assets/Eu.jpg" alt="" style={{
                     borderRadius: '230%',
                     width: '350px',
                     height: '350px',

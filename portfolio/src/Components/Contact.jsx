@@ -78,7 +78,7 @@ const Contact = () => {
 
                             <Divider />
 
-                            <a href="../src/assets/Curriculo.jpg" style={{ textDecoration: 'none', color: '#f5f5f5' }}>
+                            <a href="/assets/Curriculo.jpg" style={{ textDecoration: 'none', color: '#f5f5f5' }}>
                                 <ListItem disablePadding>
                                     <ListItemButton>
                                         <ListItemIcon>
