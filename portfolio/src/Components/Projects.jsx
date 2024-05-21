@@ -144,26 +144,23 @@ export default function ImgMediaCard() {
                                     alt="green iguana"
                                     height="230"
                                     width="375"
-                                    image="../src/assets/Rectangle 18.png"
+                                    image="/assets/ShopShoe.png"
                                 />
                                 <CardContent style={{ padding: '20px' }}>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Projeto 04
+                                        ShopShoe
                                     </Typography>
                                     <Typography variant="body2">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        Esse projeto é um e-commerce, possuindo um menu lateral que é ativado quando clicado no ícone do menu, funcionalidades como adicionar produtos ao carrinho, remover produtos do carrinho e aumentar ou diminuir a quantidade de produtos.
                                     </Typography>
 
                                     <Typography variant='body2' style={{ paddingTop: '15px' }}>
-                                        <b>Tech Stack</b>: React, Node, Express, MongoDB
+                                        <b>Tech Stack</b>: HTML, CSS e JavaScript
                                     </Typography>
                                 </CardContent>
 
                                 <CardActions style={{ justifyContent: 'flex-end' }}>
-                                    <a href="https://github.com/SamuellAguiar/VelozaCLUB" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                    <a href="https://github.com/SamuellAguiar/E-Commerce" style={{ textDecoration: 'none', color: 'inherit' }}>
                                         <GitHubButton />
                                     </a>
                                 </CardActions>
@@ -175,25 +172,22 @@ export default function ImgMediaCard() {
                                     alt="green iguana"
                                     height="230"
                                     width="375"
-                                    image="../src/assets/Rectangle 18.png"
+                                    image="assets/Calculator.png"
                                 />
                                 <CardContent style={{ padding: '20px' }}>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Projeto 05
+                                        QuickCalc
                                     </Typography>
                                     <Typography variant="body2">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        Projeto de uma calculadora simples. A calculadora possui as operações básicas de soma, subtração, multiplicação e divisão.
                                     </Typography>
 
                                     <Typography variant='body2' style={{ paddingTop: '15px' }}>
-                                        <b>Tech Stack</b>: React, Node, Express, MongoDB
+                                        <b>Tech Stack</b>: HTML, CSS e JavaScript
                                     </Typography>
                                 </CardContent>
-                                <CardActions style={{ justifyContent: 'flex-end' }}>
-                                    <a href="https://github.com/SamuellAguiar/VelozaCLUB" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <CardActions style={{ justifyContent: 'flex-end', paddingTop: "65px" }}>
+                                    <a href="https://github.com/SamuellAguiar/Calculadora" style={{ textDecoration: 'none', color: 'inherit' }}>
                                         <GitHubButton />
                                     </a>
                                 </CardActions>
@@ -205,26 +199,23 @@ export default function ImgMediaCard() {
                                     alt="green iguana"
                                     height="230"
                                     width="375"
-                                    image="../src/assets/Rectangle 18.png"
+                                    image="/assets/Relogio-Digital.png"
                                 />
                                 <CardContent style={{ padding: '20px' }}>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Projeto 06
+                                        FlashTime
                                     </Typography>
                                     <Typography variant="body2">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        Projeto de um relógio digital simples. O relógio possui a funcionalidade de mostrar a hora atual. 
                                     </Typography>
 
                                     <Typography variant='body2' style={{ paddingTop: '15px' }}>
-                                        <b>Tech Stack</b>: React, Node, Express, MongoDB
+                                        <b>Tech Stack</b>: HTML, CSS e JavaScript
                                     </Typography>
                                 </CardContent>
 
-                                <CardActions style={{ justifyContent: 'flex-end' }}>
-                                    <a href="https://github.com/SamuellAguiar/VelozaCLUB" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <CardActions style={{ justifyContent: 'flex-end', paddingTop:'65px'}}>
+                                    <a href="https://github.com/SamuellAguiar/Relogio-Digital" style={{ textDecoration: 'none', color: 'inherit' }}>
                                         <GitHubButton />
                                     </a>
                                 </CardActions>
