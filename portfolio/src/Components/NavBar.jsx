@@ -144,7 +144,7 @@ function NavBar() {
           <div>
             {/* Ícones */}
             <IconButton color="inherit">
-              <a href="https://github.com/SamuellAguiar" style={{ color: 'inherit' }}>
+              <a href="https://github.com/SamuellAguiar/Portfolio" style={{ color: 'inherit' }}>
                 <GitHubIcon />
               </a>
             </IconButton>
