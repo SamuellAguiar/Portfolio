@@ -144,17 +144,17 @@ function NavBar() {
           <div>
             {/* Ícones */}
             <IconButton color="inherit">
-              <a href="https://github.com/SamuellAguiar/Portfolio" style={{ color: 'inherit' }}>
+              <a href="https://github.com/SamuellAguiar/Portfolio" target='_blank' style={{ color: 'inherit' }}>
                 <GitHubIcon />
               </a>
             </IconButton>
             <IconButton color="inherit">
-              <a href="https://www.linkedin.com/in/samuell-aguiar/" style={{ color: 'inherit' }}>
+              <a href="https://www.linkedin.com/in/samuell-aguiar/" target='_blank' style={{ color: 'inherit' }}>
                 <LinkedInIcon />
               </a>
             </IconButton>
             <IconButton color="inherit">
-              <a href="https://www.instagram.com/samuell.ag/" style={{ color: 'inherit' }}>
+              <a href="https://www.instagram.com/samuell.ag/" target='_blank' style={{ color: 'inherit' }}>
                 <InstagramIcon />
               </a>
             </IconButton>
