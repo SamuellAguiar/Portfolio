@@ -18,7 +18,7 @@ const Init = () => {
                 color: '#f2f2f2',
             }}>
                 <h2 style={{maxWidth: '600px'}}>Olá!</h2>
-                <p style={{ paddingTop:'20px', maxWidth: '300px'}}>Me chamo Samuell Aguiar, sou estudante de Sistemas de Informação na <a href="https://ufop.br/" style={{textDecoration:'none', color:'#f2f2f2'}}>Ufop</a> e sou desenvolvedor Full-Stack.</p>
+                <p style={{ paddingTop:'20px', maxWidth: '400px'}}>Me chamo Samuell Aguiar, sou estudante de Sistemas de Informação na <a href="https://ufop.br/" style={{textDecoration:'none', color:'#f2f2f2'}}>Ufop</a>  e sou desenvolvedor Full-Stack.</p>
             </div>
 
             <div style={{
