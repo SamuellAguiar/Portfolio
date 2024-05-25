@@ -12,18 +12,45 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import { useMediaQuery } from '@mui/material';
 
 const Contact = () => {
+    const isSmallScreen = useMediaQuery('(max-width: 600px)');
+    const isMediumScreen = useMediaQuery('(max-width: 960px)');
+
+    const containerStyle = {
+        display: 'flex',
+        flexDirection: isSmallScreen ? 'column' : 'row',
+        justifyContent: 'space-around',
+        marginTop: '40px',
+        marginBottom: '50px',
+        height: isSmallScreen ? 'auto' : '60vh',
+    };
+
+    const boxStyle = {
+        width: isSmallScreen ? '80vw' : '100vh',
+        fontSize: 'bold',
+        display: 'flex',
+        marginTop: isSmallScreen ? '20px' : '110px',
+        marginLeft: isSmallScreen ? '10px' : '120px',
+    };
+
+    const textStyle = {
+        marginTop: isSmallScreen ? '20px' : '100px',
+        fontFamily: 'Roboto Condensed',
+        fontSize: 'bold 18px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        color: '#f5f5f5',
+        marginRight: isSmallScreen ? '10px' : '120px',
+        textAlign: isSmallScreen ? 'center' : 'left',
+    };
+
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '40px', marginBottom: '50px', height: '60vh' }}>
-            <div style={{
-                width: '100vh',
-                fontSize: 'bold',
-                display: 'flex',
-                marginTop: '110px',
-                marginLeft: '120px',
-            }}>
-                <Box sx={{ width: '300px', height: '260px', maxWidth: 360, color: '#f5f5f5', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)' }}>
+        <div style={containerStyle}>
+            <div style={boxStyle}>
+                <Box sx={{ width: '100%', maxWidth: 360, color: '#f5f5f5', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)' }}>
                     <nav aria-label="main mailbox folders">
                         <List>
                             <a href="https://github.com/SamuellAguiar" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#f5f5f5' }}>
@@ -93,19 +120,10 @@ const Contact = () => {
                     <Divider />
                 </Box>
             </div>
-            <div style={{
-                marginTop: '100px',
-                fontFamily: 'Roboto Condensed',
-                fontSize: 'bold 18px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                color: '#f5f5f5',
-                marginRight: '120px',
-            }}>
+            <div style={textStyle}>
                 <h1>Contate Me</h1>
-                <p style={{ maxWidth: '50vh', }}>Se você gostou de mim ou se interessou em algum projeto, você pode entrar em contato comigo através das minhas redes sociais ou se preferir, pode me enviar um e-mail.</p>
-                <p style={{ maxWidth: '50vh', }}>Também sinta-se a vontade para enviar críticas, dicas ou conversar sobre áreas correlacionadas!</p>
+                <p style={{ maxWidth: '50vh' }}>Se você gostou de mim ou se interessou em algum projeto, você pode entrar em contato comigo através das minhas redes sociais ou se preferir, pode me enviar um e-mail.</p>
+                <p style={{ maxWidth: '50vh' }}>Também sinta-se a vontade para enviar críticas, dicas ou conversar sobre áreas correlacionadas!</p>
             </div>
         </div>
     )

@@ -13,11 +13,13 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link as ScrollLink } from 'react-scroll';
+import { useMediaQuery } from '@mui/material';
 
 const pages = ['Início', 'Experiencia', 'Tecnologias', 'Projetos', 'Contato'];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const isSmallScreen = useMediaQuery('(max-width: 600px)');
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -38,72 +40,67 @@ function NavBar() {
     }}>
       <Container maxWidth="xl">
         <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="#"
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="#"
+            sx={{
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'Roboto Condensed',
+              fontWeight: 400,
+              letterSpacing: '.2rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            Samuell Aguiar
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
               sx={{
-                mr: 5,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'Roboto Condensed',
-                fontWeight: 400,
-                letterSpacing: '.2rem',
-                color: 'inherit',
-                textDecoration: 'none',
+                display: { xs: 'block', md: 'none' },
               }}
             >
-              Samuell Aguiar
-            </Typography>
-          </div>
-
-          <div>
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: 'block', md: 'none' },
-                }}
-              >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <ScrollLink
-                      to={page.toLowerCase()}
-                      smooth={true}
-                      duration={500}
-                      onClick={handleCloseNavMenu}
-                      style={{ color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}
-                    >
-                      <Typography textAlign="center">{page}</Typography>
-                    </ScrollLink>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
-          </div>
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <ScrollLink
+                    to={page.toLowerCase()}
+                    smooth={true}
+                    duration={500}
+                    onClick={handleCloseNavMenu}
+                    style={{ color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}
+                  >
+                    <Typography textAlign="center">{page}</Typography>
+                  </ScrollLink>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
 
           <Typography
             variant="h5"
@@ -111,18 +108,19 @@ function NavBar() {
             component="a"
             href="#"
             sx={{
-              mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontFamily: 'Roboto Condensed',
+              fontWeight: 400,
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
+              justifyContent: 'center',
             }}
           >
             Samuell Aguiar
           </Typography>
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <ScrollLink
@@ -133,16 +131,14 @@ function NavBar() {
                 onClick={handleCloseNavMenu}
                 style={{ color: 'white', textDecoration: 'none', cursor: 'pointer', margin: '0 10px' }}
               >
-                <Button
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
+                <Button sx={{ my: 2, color: 'white', display: 'block' }}>
                   {page}
                 </Button>
               </ScrollLink>
             ))}
           </Box>
-          <div>
-            {/* Ícones */}
+
+          <Box sx={{ display: 'flex' }}>
             <IconButton color="inherit">
               <a href="https://github.com/SamuellAguiar/Portfolio" target='_blank' style={{ color: 'inherit' }}>
                 <GitHubIcon />
@@ -158,7 +154,7 @@ function NavBar() {
                 <InstagramIcon />
               </a>
             </IconButton>
-          </div>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>

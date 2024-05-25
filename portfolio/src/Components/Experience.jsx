@@ -5,35 +5,53 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import Divider from '@mui/material/Divider';
+import { useMediaQuery } from '@mui/material';
 
 export default function Experience() {
+    const isSmallScreen = useMediaQuery('(max-width: 600px)');
+    const isMediumScreen = useMediaQuery('(max-width: 960px)');
+
+    const containerStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: isSmallScreen ? '10px' : isMediumScreen ? '15px' : '20px',
+        paddingTop: isSmallScreen ? '20px' : '30px',
+        paddingBottom: isSmallScreen ? '30px' : '60px',
+        fontSize: isSmallScreen ? '16px' : '20px',
+        color: '#f2f2f2',
+        paddingLeft: isSmallScreen ? '10px' : isMediumScreen ? '80px' : '180px',
+    };
+
+    const headerStyle = {
+        color: '#f5f5f5',
+        textAlign: isSmallScreen ? 'center' : 'left',
+        maxWidth: '600px',
+    };
+
+    const cardContainerStyle = {
+        paddingTop: '20px',
+        display: 'flex',
+        justifyContent: isSmallScreen ? 'center' : 'flex-start',
+    };
+
     return (
-        <div style={{
-            display: 'left',
-            padding: '20px',
-            paddingTop: '30px',
-            paddingBottom: '60px',
-            fontSize: '20px',
-            flexDirection: 'column',
-            color: '#f2f2f2',
-            paddingLeft: '180px',
-        }}>
-            <div style={{ color: '#f5f5f5', alignContent: 'center' }}>
-                <h2 style={{ maxWidth: '600px' }}>Experiência</h2>
-                <p style={{ paddingTop: '20px'}}>Experiências que já tive no decorrer da graduação</p>
+        <div style={containerStyle}>
+            <div style={headerStyle}>
+                <h2>Experiência</h2>
+                <p style={{ paddingTop: '20px' }}>Experiências que já tive no decorrer da graduação</p>
             </div>
 
-
-            <div style={{ paddingTop:'20px' }}>
+            <div style={cardContainerStyle}>
                 <Card sx={{ maxWidth: 600, backgroundColor: '#191919', color: '#f5f5f5' }}>
                     <CardActionArea>
                         <CardContent>
                             <div style={{
                                 display: 'flex',
                                 justifyContent: 'space-between',
+                                flexDirection: isSmallScreen ? 'column' : 'row',
                             }}>
                                 <div>
-                                    <Typography gutterBottom variant="h6" component="div" style={{ color: 'f5f5f5' }}>
+                                    <Typography gutterBottom variant="h6" component="div" style={{ color: '#f5f5f5' }}>
                                         Desenvolvedor Web
                                     </Typography>
                                 </div>
@@ -41,15 +59,11 @@ export default function Experience() {
                             <div style={{
                                 display: 'flex',
                                 justifyContent: 'space-between',
+                                flexDirection: isSmallScreen ? 'column' : 'row',
                             }}>
-                                <div>
-                                    <Typography variant="body2" color="text.secondary" style={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: '5px',
-                                        color: '#f5f5f5',
-                                    }}>
-                                        <ApartmentIcon />
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#f5f5f5' }}>
+                                    <ApartmentIcon />
+                                    <Typography variant="body2" color="text.secondary" style={{ color: '#f5f5f5' }}>
                                         Visão Tecnologia e Sistemas
                                     </Typography>
                                 </div>
