@@ -4,7 +4,7 @@ import { LogosHtml5 } from './Icons/LogosHtml5';
 import { LogosCss3 } from './Icons/LogosCss3';
 import { LogosReact } from './Icons/LogosReact';
 import { LogosBootstrap } from './Icons/LogosBootstrap';
-import{ LogosPython } from './Icons/LogosPython';
+import { LogosPython } from './Icons/LogosPython';
 import { LogosMysqlIcon } from './Icons/LogosMysqlIcon';
 import { LogosJava } from './Icons/LogosJava';
 import { LogosGitIcon } from './Icons/LogosGitIcon';
@@ -51,7 +51,7 @@ export default function Technologies() {
                 <div style={{ paddingBottom: '40px', paddingTop: '10px' }}>
                     <LogosReact />
                 </div>
-            
+
                 <div style={{ paddingBottom: '40px', paddingTop: '10px' }}>
                     <LogosBootstrap />
                 </div>
@@ -69,6 +69,10 @@ export default function Technologies() {
                 </div>
 
                 <div style={{ paddingBottom: '40px', paddingTop: '10px' }}>
+                    <LogosDjangoIcon />
+                </div>
+
+                <div style={{ paddingBottom: '40px', paddingTop: '10px' }}>
                     <LogosGitIcon />
                 </div>
 
@@ -78,10 +82,6 @@ export default function Technologies() {
 
                 <div style={{ paddingBottom: '40px', paddingTop: '10px' }}>
                     <LogosVisualStudioCode />
-                </div>
-
-                <div style={{ paddingBottom: '40px', paddingTop: '10px' }}>
-                    <LogosDjangoIcon />
                 </div>
             </div>
         </div>
