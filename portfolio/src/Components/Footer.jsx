@@ -18,7 +18,9 @@ const Footer = () => {
     return (
         <div style={{
             display: 'flex',
-            justifyContent: 'space-around',
+            justifyContent: 'space-between',
+            paddingRight: '80px',
+            paddingLeft: '65px',    
             alignItems: 'center',
             color: 'white',
             height: '50px',
@@ -42,16 +44,6 @@ const Footer = () => {
                 Samuell Aguiar
             </Typography>
 
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: '25px',
-            }}>
-                <Typography>
-                    +55 (31) 9 8208-9884
-                </Typography>
-            </div>
             <div>
                 <IconButton color="inherit">
                     <a href="https://github.com/SamuellAguiar/Portfolio" target='_blank' style={{ color: 'inherit' }}>
