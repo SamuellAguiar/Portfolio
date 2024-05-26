@@ -4,7 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import ApartmentIcon from '@mui/icons-material/Apartment';
-import Divider from '@mui/material/Divider';
 import { useMediaQuery } from '@mui/material';
 
 export default function Experience() {
@@ -20,6 +19,7 @@ export default function Experience() {
         fontSize: isSmallScreen ? '16px' : '20px',
         color: '#f2f2f2',
         paddingLeft: isSmallScreen ? '10px' : isMediumScreen ? '80px' : '180px',
+        width: isSmallScreen ? '100%' : isMediumScreen ? '80%' : '60%', 
     };
 
     const headerStyle = {
@@ -42,7 +42,7 @@ export default function Experience() {
             </div>
 
             <div style={cardContainerStyle}>
-                <Card sx={{ maxWidth: 600, backgroundColor: '#191919', color: '#f5f5f5' }}>
+                <Card sx={{ maxWidth: 1000, backgroundColor: '#191919', color: '#f5f5f5' }}>
                     <CardActionArea>
                         <CardContent>
                             <div style={{
@@ -60,6 +60,7 @@ export default function Experience() {
                                 display: 'flex',
                                 justifyContent: 'space-between',
                                 flexDirection: isSmallScreen ? 'column' : 'row',
+                                gap: '100px'
                             }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#f5f5f5' }}>
                                     <ApartmentIcon />
