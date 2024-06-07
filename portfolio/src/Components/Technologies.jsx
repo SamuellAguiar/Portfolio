@@ -30,7 +30,7 @@ export default function Technologies() {
 
             <div style={{
                 display: 'flex',
-                gap: '90px',
+                gap: '80px',
                 flexDirection: 'row',
                 flexWrap: 'wrap',
                 padding: '60px',
