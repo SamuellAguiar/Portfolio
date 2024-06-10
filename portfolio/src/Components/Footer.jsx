@@ -4,7 +4,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import MailIcon from '@mui/icons-material/Mail';
 import IconButton from '@mui/material/IconButton';
 import { useMediaQuery } from '@mui/material';
 
@@ -81,8 +81,8 @@ const Footer = () => {
                     </a>
                 </IconButton>
                 <IconButton color="inherit">
-                    <a href="https://www.instagram.com/samuell.ag/" target='_blank' style={{ color: 'inherit' }}>
-                        <InstagramIcon />
+                    <a href="mailto: samuellcarlosaguiar@gmail.com" target='_blank' style={{ color: 'inherit' }}>
+                        <MailIcon />
                     </a>
                 </IconButton>
             </div>
