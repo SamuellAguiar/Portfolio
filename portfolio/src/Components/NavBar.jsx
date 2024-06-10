@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import MailIcon from '@mui/icons-material/Mail';
 import { Link as ScrollLink } from 'react-scroll';
 import { useMediaQuery } from '@mui/material';
 
@@ -150,8 +150,8 @@ function NavBar() {
               </a>
             </IconButton>
             <IconButton color="inherit">
-              <a href="https://www.instagram.com/samuell.ag/" target='_blank' style={{ color: 'inherit' }}>
-                <InstagramIcon />
+              <a href="mailto: samuellcarlosaguiar@gmail.com" target='_blank' style={{ color: 'inherit' }}>
+                <MailIcon />
               </a>
             </IconButton>
           </Box>
