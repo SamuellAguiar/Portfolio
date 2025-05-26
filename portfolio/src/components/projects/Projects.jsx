@@ -28,7 +28,7 @@ function Projects() {
      return (
           <section className="projects-section" id="projects">
                <h2 className="projects-title">
-                    My <span>Projects</span>
+                    Meus <span>Projetos</span>
                </h2>
 
                <div className="projects-grid">

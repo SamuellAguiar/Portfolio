@@ -17,7 +17,7 @@ const experiences = [
 export default function Experience() {
      return (
           <section className="experience-section">
-               <h2 className="experience-title">Minha <span>Experiencia</span></h2>
+               <h2 className="experience-title"><span>Experiencia</span></h2>
                <div className="experience-list">
                     {experiences.map((exp) => (
                          <div className="experience-card" key={exp.id}>

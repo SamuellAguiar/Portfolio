@@ -14,8 +14,10 @@ function NavBar() {
 
                {/* Navegação */}
                <nav className="nav-links">
-                    <a href="#about">Sobre Mim</a>
+                    <a href="#home">Início</a>
                     <a href="#skills">Habilidades</a>
+                    <a href="#experience">Experiencia</a>
+                    <a href="#about">Sobre Mim</a>
                     <a href="#projects">Projetos</a>
                     <a href="#contact">Contato</a>
                </nav>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import AboutImage from '/Me.jpeg'; // substitua com o caminho correto
+import AboutImage from '/Me2.jpeg'; // substitua com o caminho correto
 
 export default function AboutMe() {
      return (
@@ -10,15 +10,15 @@ export default function AboutMe() {
                          <img src={AboutImage} alt="About me illustration" />
                     </div>
                     <div className="about-content">
-                         <h2 className="about-title">About <span>Me</span></h2>
+                         <h2 className="about-title">Sobre <span>Mim</span></h2>
                          <p>
-                              I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
+                              Sou desenvolvedor web Full Stack e estudante de <i>Sistemas de Informação na Universidade Federal de Ouro Preto (UFOP)</i>. Tenho experiência prática no desenvolvimento de interfaces web responsivas e acessíveis, atuando com tecnologias como <i>HTML, CSS, JavaScript, React.js e Node.js</i>.
                          </p>
                          <p>
-                              I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, NestJS, TailwindCSS, Supabase and much more.
+                              Durante meu período na empresa júnior <b>Visão Tecnologia e Sistemas</b>, participei de projetos reais utilizando <i>WordPress e Elementor</i>, colaborando com equipes ágeis e contribuindo na padronização de componentes reutilizáveis.
                          </p>
                          <p>
-                              When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
+                              Sou uma pessoa dedicada, comunicativa e sempre disposta a aprender. Gosto de encarar desafios com calma e foco, buscando compreender o todo antes de agir. Tenho facilidade em trabalhar em equipe e oferecer suporte de forma atenciosa, prezando pela organização e por um ambiente colaborativo. Acredito no aprendizado contínuo e vejo cada nova experiência como uma oportunidade de evolução pessoal e profissional.
                          </p>
                     </div>
                </div>
