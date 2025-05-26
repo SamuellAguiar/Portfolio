@@ -5,6 +5,7 @@
      padding: 1rem 2rem;
      background-color: white;
      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+     flex-wrap: wrap;
 }
 
 .logo {
@@ -26,6 +27,7 @@
 
 .nav-links {
      display: flex;
+     align-items: center;
      gap: 1.5rem;
      font-weight: 600;
      font-size: 0.875rem;
@@ -37,6 +39,12 @@
 }
 
 .resume-button {
+     display: flex;
+     /* Alinha ícone e texto */
+     align-items: center;
+     /* Alinha verticalmente */
+     gap: 0.5rem;
+     /* Espaço entre texto e ícone */
      background-color: black;
      color: white;
      padding: 0.5rem 1rem;
@@ -49,4 +57,8 @@
 
 .resume-button:hover {
      background-color: #333;
+}
+
+.pdf-icon {
+     font-size: 1rem;
 }
