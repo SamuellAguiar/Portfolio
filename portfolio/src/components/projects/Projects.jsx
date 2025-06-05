@@ -12,16 +12,17 @@ function Projects() {
           },
           {
                id: "02",
-               title: "Euphoria – Ecommerce (Apparels) Website Template",
+               title: "Landing Page - Kelly & Laís",
                description:
-                    "I'm Evren Shah. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
                image: "/project2.png",
+               link: "https://site-kelly.vercel.app/"
           },
           {
                id: "03",
-               title: "Blog Website Template",
+               title: "Gerenciador Financeiro ???",
                description:
-                    "I'm Evren Shah. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
                image: "/project3.png",
           },
      ];
