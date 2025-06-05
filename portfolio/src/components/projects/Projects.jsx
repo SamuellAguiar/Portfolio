@@ -12,7 +12,7 @@ function Projects() {
           },
           {
                id: "02",
-               title: "Landing Page - Kelly & Laís",
+               title: "🦷 Landing Page - Kelly & Laís",
                description:
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
                image: "/project2.png",
@@ -20,7 +20,7 @@ function Projects() {
           },
           {
                id: "03",
-               title: "Gerenciador Financeiro ???",
+               title: "❓❓❓❓",
                description:
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
                image: "/project3.png",
