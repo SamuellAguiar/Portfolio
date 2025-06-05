@@ -86,6 +86,7 @@ function Home() {
                                    <Button
                                         variant="outlined"
                                         startIcon={<ChatIcon />}
+                                        href="#contact"
                                         sx={{
                                              color: '#000000',
                                              borderColor: '#000000',
