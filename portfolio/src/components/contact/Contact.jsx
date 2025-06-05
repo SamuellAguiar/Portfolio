@@ -1,9 +1,9 @@
 import "./Contact.css";
 import {
-     Facebook,
      Instagram,
-     Twitter,
      GitHub,
+     LinkedIn,
+     Email,
 } from "@mui/icons-material";
 
 function Contact() {
@@ -12,29 +12,27 @@ function Contact() {
                <div className="contact-container">
                     {/* Formulário */}
                     <form className="contact-form">
-                         <input type="text" placeholder="Your name" required />
-                         <input type="email" placeholder="Email" required />
-                         <input type="text" placeholder="Your website (if exists)" />
-                         <textarea placeholder="How can I help?" required></textarea>
-                         <button type="submit">Get In Touch</button>
+                         <input type="text" placeholder="Digite o seu nome" required />
+                         <input type="email" placeholder="Insira o seu e-mail" required />
+                         <input type="tel" placeholder="Deixe o seu número para contato" />
+                         <textarea placeholder="Como posso te ajudar?" required></textarea>
+                         <button type="submit">Enviar</button>
                          <div className="social-icons">
-                              <a href="#"><Facebook /></a>
-                              <a href="#"><Instagram /></a>
-                              <a href="#"><Twitter /></a>
-                              <a href="#"><GitHub /></a>
+                              <a href="https://www.linkedin.com/in/samuell-aguiar/"><LinkedIn /></a>
+                              <a href="https://github.com/SamuellAguiar"><GitHub /></a>
+                              <a href="https://www.instagram.com/samuell.ag/"><Instagram /></a>
+                              <a href="mailto:samuellcarlosaguiar@gmail.com"><Email /></a>
                          </div>
                     </form>
 
                     {/* Texto e contato */}
                     <div className="contact-text">
-                         <h2>Let’s <span>talk</span> for</h2>
-                         <h2>Something special</h2>
+                         <h2><span>Fale comigo! </span></h2>
                          <p>
-                              I seek to push the limits of creativity to create high-engaging, user-friendly,
-                              and memorable interactive experiences.
+                              Se tiver dúvidas, sugestões ou quiser iniciar um projeto comigo, é só me chamar. Responderei o mais rápido possível.
                          </p>
-                         <p><strong>youremail@gmail.com</strong></p>
-                         <p><strong>1234567890</strong></p>
+                         <p><strong>samuellcarlosaguiar@gmail.com</strong></p>
+                         <p><strong>(31) 98208-9884</strong></p>
                     </div>
                </div>
           </section>
