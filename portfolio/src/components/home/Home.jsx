@@ -10,7 +10,7 @@ import React from 'react';
 function Home() {
      return (
           <>
-               <section className="about-section">
+               <section className="about-section" id="home">
                     <div className="about-text">
                          <h1>
                               Olá, Eu sou o<strong> Samuell</strong>.
