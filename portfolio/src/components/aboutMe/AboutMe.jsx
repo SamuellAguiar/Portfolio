@@ -4,7 +4,7 @@ import AboutImage from '/Me2.jpeg'; // substitua com o caminho correto
 
 export default function AboutMe() {
      return (
-          <section className="about-section">
+          <section className="about-section" id="about">
                <div className="about-container">
                     <div className="about-image">
                          <img src={AboutImage} alt="About me illustration" />
