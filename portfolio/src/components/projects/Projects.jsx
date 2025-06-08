@@ -14,7 +14,7 @@ function Projects() {
                id: "02",
                title: "🦷 Landing Page - Kelly & Laís",
                description:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    "Desenvolvi uma landing page profissional para duas dentistas, com foco na divulgação do curso que estão criando juntas. A aplicação inclui seções dedicadas à introdução do curso, apresentação das profissionais, depoimentos e um formulário de contato funcional para captação de interessados. Foram utilizadas tecnologias como React, CSS e Vite.",
                image: "/project2.png",
                link: "https://site-kelly.vercel.app/"
           },
