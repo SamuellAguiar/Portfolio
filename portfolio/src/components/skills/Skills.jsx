@@ -7,12 +7,12 @@ import {
 import { DiJava } from "react-icons/di";
 
 const skills = [
-     { name: 'Python', icon: <SiPython /> },
      { name: 'HTML', icon: <SiHtml5 /> },
      { name: 'CSS', icon: <SiCss3 /> },
      { name: 'JavaScript', icon: <SiJavascript /> },
      { name: 'React', icon: <SiReact /> },
      { name: 'Node.js', icon: <SiNodedotjs /> },
+     { name: 'Python', icon: <SiPython /> },
      { name: 'Java', icon: <DiJava /> },
      { name: 'PHP', icon: <SiPhp /> },
      { name: 'MySQL', icon: <SiMysql /> },
