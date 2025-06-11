@@ -20,9 +20,9 @@ function Projects() {
           },
           {
                id: "03",
-               title: "❓❓❓❓",
+               title: "📲 Clone da Tela de Login do Instagram",
                description:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    "Desenvolvi um clone fiel da tela de login do Instagram utilizando HTML, CSS e JavaScript, com foco na reprodução visual e funcional da interface original. O projeto visa demonstrar habilidades em construção de interfaces responsivas, organização de layout com CSS e manipulação básica de eventos com JavaScript. ",
                image: "/project3.png",
           },
      ];
