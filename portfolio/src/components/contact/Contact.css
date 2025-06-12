@@ -4,6 +4,7 @@
      color: #000;
 }
 
+/*
 .contact-container {
      display: flex;
      flex-wrap: wrap;
@@ -12,6 +13,7 @@
      max-width: 1200px;
      margin: 0 auto;
 }
+*/
 
 .contact-form {
      flex: 1;
@@ -87,4 +89,63 @@
      margin-top: 1rem;
      font-size: 0.95rem;
      color: #444;
+}
+
+/* Layout padrão (desktop): texto e formulário lado a lado */
+.contact-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 3rem;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+/* Responsividade para tablets e dispositivos menores */
+@media (max-width: 900px) {
+     .contact-container {
+          flex-direction: column;
+          gap: 2rem;
+     }
+
+     /* Faz o texto aparecer primeiro */
+     .contact-text {
+          order: 1;
+     }
+
+     /* Formulário vem depois */
+     .contact-form {
+          order: 2;
+     }
+}
+
+/* Ajustes adicionais para celulares pequenos */
+@media (max-width: 600px) {
+     .contact-section {
+          padding: 2rem 1rem;
+     }
+
+     .contact-text h2 {
+          font-size: 1.5rem;
+     }
+
+     .contact-text p {
+          font-size: 0.9rem;
+     }
+
+     .contact-form input,
+     .contact-form textarea {
+          font-size: 0.9rem;
+          padding: 0.6rem 0.8rem;
+     }
+
+     .contact-form button {
+          padding: 0.7rem 1rem;
+          font-size: 0.95rem;
+     }
+
+     .social-icons a {
+          width: 32px;
+          height: 32px;
+     }
 }
