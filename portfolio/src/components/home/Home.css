@@ -80,3 +80,50 @@
      object-fit: cover;
      border-radius: 50%;
 }
+
+
+@media (max-width: 1024px) {
+     .about-section {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 2rem 1rem;
+          text-align: center;
+          height: auto;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+     }
+
+     .about-text {
+          max-width: 100%;
+     }
+
+     .about-text h1,
+     .about-text h2 {
+          font-size: 2rem;
+     }
+
+     .about-text p {
+          font-size: 0.95rem;
+     }
+
+     .about-image {
+          width: 100%;
+          margin-top: 2rem;
+     }
+
+     .photo-placeholder {
+          width: 250px;
+          height: 250px;
+     }
+
+     .MuiStack-root {
+          flex-direction: column !important;
+          align-items: center;
+     }
+
+     .MuiButton-root {
+          width: 100%;
+          max-width: 250px;
+     }
+}
