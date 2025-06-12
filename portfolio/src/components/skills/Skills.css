@@ -73,3 +73,51 @@
      margin: 0;
      color: #333;
 }
+
+@media (max-width: 768px) {
+     .skills-title {
+          font-size: 24px;
+          margin-bottom: 30px;
+          padding: 0 1rem;
+     }
+
+     .skills-grid {
+          grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+          gap: 20px;
+          padding: 0 1rem;
+     }
+
+     .skill-card {
+          width: 120px;
+          height: 120px;
+          padding: 16px 12px;
+     }
+
+     .skill-icon {
+          font-size: 32px;
+          margin-bottom: 8px;
+     }
+
+     .skill-card p {
+          font-size: 13px;
+     }
+}
+
+@media (max-width: 480px) {
+     .skills-grid {
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .skill-card {
+          width: 100px;
+          height: 100px;
+     }
+
+     .skill-icon {
+          font-size: 28px;
+     }
+
+     .skill-card p {
+          font-size: 12px;
+     }
+}
