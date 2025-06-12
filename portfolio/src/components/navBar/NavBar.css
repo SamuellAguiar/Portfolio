@@ -6,6 +6,9 @@
      background-color: white;
      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
      flex-wrap: wrap;
+     position: sticky;
+     top: 0;
+     z-index: 999;
 }
 
 .logo {
@@ -38,15 +41,13 @@
      color: black;
 }
 
+/* Currículo */
 .resume-button {
      display: flex;
-     /* Alinha ícone e texto */
      align-items: center;
-     /* Alinha verticalmente */
      gap: 0.5rem;
-     /* Espaço entre texto e ícone */
      background-color: black;
-     color: white;
+     color: white !important;
      padding: 0.5rem 1rem;
      border-radius: 0.375rem;
      font-size: 0.875rem;
@@ -61,4 +62,68 @@
 
 .pdf-icon {
      font-size: 1rem;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+     display: none;
+     flex-direction: column;
+     cursor: pointer;
+     gap: 4px;
+     margin-left: auto;
+}
+
+.menu-toggle .bar {
+     width: 25px;
+     height: 3px;
+     background-color: black;
+     transition: all 0.3s ease;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+     transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+     opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+     .nav-links {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-in-out;
+     }
+
+     .nav-links.active {
+          max-height: 400px;
+          padding: 1rem 0;
+     }
+
+     .resume-button {
+          margin-top: 1rem;
+          /* Espaço acima para separar dos links */
+          width: 90%;
+          /* Botão mais largo para mobile */
+          justify-content: center;
+          /* Centralizar texto e ícone */
+          background-color: black;
+          color: white;
+     }
+
+     .menu-toggle {
+          display: flex;
+     }
 }
