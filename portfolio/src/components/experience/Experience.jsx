@@ -1,4 +1,3 @@
-import React from 'react';
 import './Experience.css';
 import BusinessIcon from '@mui/icons-material/Business';
 
