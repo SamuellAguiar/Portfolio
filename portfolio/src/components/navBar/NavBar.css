@@ -90,6 +90,18 @@
      transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 990;
+     /* abaixo do menu (999), acima do resto */
+}
+
+
 @media (max-width: 900px) {
      .nav-links {
           position: absolute;
