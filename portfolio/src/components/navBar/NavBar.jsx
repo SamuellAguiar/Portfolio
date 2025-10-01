@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "./NavBar.css";
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
@@ -11,20 +11,17 @@ function NavBar() {
 
      return (
           <div className="navbar">
-               {/* Logo e Nome */}
                <div className="logo">
                     <img src="/Logo.png" alt="Logo" className="logo-image" />
                     <span className="name">Samuell Aguiar</span>
                </div>
 
-               {/* Botão de menu mobile */}
                <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
                </div>
 
-               {/* Navegação com botão dentro */}
                <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
                     <a href="#home" onClick={() => setMenuOpen(false)}>Início</a>
                     <a href="#skills" onClick={() => setMenuOpen(false)}>Habilidades</a>

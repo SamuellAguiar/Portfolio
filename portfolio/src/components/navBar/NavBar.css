@@ -41,7 +41,6 @@
      color: black;
 }
 
-/* Currículo */
 .resume-button {
      display: flex;
      align-items: center;
@@ -64,7 +63,6 @@
      font-size: 1rem;
 }
 
-/* Menu Toggle */
 .menu-toggle {
      display: none;
      flex-direction: column;
@@ -92,7 +90,6 @@
      transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Responsividade */
 @media (max-width: 900px) {
      .nav-links {
           position: absolute;
@@ -114,11 +111,8 @@
 
      .resume-button {
           margin-top: 1rem;
-          /* Espaço acima para separar dos links */
           width: 90%;
-          /* Botão mais largo para mobile */
           justify-content: center;
-          /* Centralizar texto e ícone */
           background-color: black;
           color: white;
      }
