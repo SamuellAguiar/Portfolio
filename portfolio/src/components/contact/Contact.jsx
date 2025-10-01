@@ -1,12 +1,7 @@
 import "./Contact.css";
-import {
-     Instagram,
-     GitHub,
-     LinkedIn,
-     Email,
-} from "@mui/icons-material";
+import { Instagram, GitHub, LinkedIn, Email } from "@mui/icons-material";
 import emailjs from 'emailjs-com';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 function Contact() {
      const form = useRef();
@@ -15,13 +10,13 @@ function Contact() {
           e.preventDefault();
 
           emailjs.sendForm(
-               'service_7v5ynpq', // Seu Service ID
-               'template_g9vi1wj', // Seu Template ID
+               import.meta.env.VITE_EMAILJS_SERVICE_KEY,
+               import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                form.current,
-               'JfEVFBFv1GoGP43bo' // Sua Public Key (User ID)
+               import.meta.env.VITE_EMAILJS_USER_ID
           ).then(() => {
                alert("Mensagem enviada com sucesso!");
-               form.current.reset(); // Limpa o formulário após envio
+               form.current.reset();
           }).catch(() => {
                alert("Erro ao enviar mensagem. Tente novamente mais tarde.");
           });
@@ -31,7 +26,6 @@ function Contact() {
           <section className="contact-section" id="contact">
                <div className="contact-container">
 
-                    {/* Formulário */}
                     <form className="contact-form" ref={form} onSubmit={sendEmail}>
                          <input
                               type="text"
@@ -44,11 +38,6 @@ function Contact() {
                               name="email"
                               placeholder="Insira o seu e-mail"
                               required
-                         />
-                         <input
-                              type="tel"
-                              name="phone"
-                              placeholder="Deixe o seu número para contato"
                          />
                          <input
                               type="text"
@@ -64,7 +53,6 @@ function Contact() {
                          <button type="submit">Enviar</button>
                     </form>
 
-                    {/* Texto lateral e redes sociais */}
                     <div className="contact-text">
                          <h2><span>Fale comigo!</span></h2>
                          <p>
