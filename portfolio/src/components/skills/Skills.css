@@ -25,7 +25,6 @@
 .skill-card {
      border: 2px solid #ccc;
      border-radius: 10px;
-     /* Menos arredondado = mais quadrado */
      padding: 24px 16px;
      width: 150px;
      height: 150px;
@@ -40,25 +39,18 @@
 
 .skill-card:hover {
      background-color: #000;
-     /* fundo preto */
      color: #fff;
-     /* texto branco */
      border-color: #000;
-     /* borda preta */
      transform: scale(1.07);
-     /* leve zoom */
      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-     /* sombra mais visível */
 }
 
 .skill-card:hover .skill-icon {
      color: #fff;
-     /* ícone branco */
 }
 
 .skill-card:hover p {
      color: #fff;
-     /* texto branco */
 }
 
 .skill-icon {

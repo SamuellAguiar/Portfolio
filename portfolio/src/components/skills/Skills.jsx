@@ -1,4 +1,3 @@
-import React from 'react';
 import './Skills.css';
 import {
      SiPython, SiHtml5, SiCss3, SiJavascript, SiReact,
