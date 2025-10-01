@@ -1,5 +1,5 @@
 
-# 💼 Portfólio — Samuell Aguiar
+#  Portfólio — Samuell Aguiar
 
 Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, experiências e habilidades de forma clara e profissional.
 
@@ -7,16 +7,16 @@ O site está publicado em: [samuellaguiar.vercel.app](https://samuellaguiar.verc
 
 ---
 
-## 🖥️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
-* ⚡ [Vite](https://vitejs.dev/) — build tool
-* ⚛️ [React](https://react.dev/) — biblioteca para interfaces
-* 🎨 CSS Modules — estilização por componentes
-* 🚀 [Vercel](https://vercel.com/) — deploy e hospedagem
+*  [Vite](https://vitejs.dev/) — build tool
+*  [React](https://react.dev/) — biblioteca para interfaces
+*  CSS Modules — estilização por componentes
+*  [Vercel](https://vercel.com/) — deploy e hospedagem
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 src/
@@ -35,7 +35,7 @@ src/
 
 ---
 
-## 🚀 Como Executar Localmente
+##  Como Executar Localmente
 
 1. Clone o repositório:
    ```bash
@@ -57,30 +57,30 @@ src/
 
 ---
 
-## 📸 Funcionalidades
+##  Funcionalidades
 
-* ✅ Página inicial com apresentação
-* ✅ Seção “Sobre mim” destacando minha trajetória
-* ✅ Listagem de projetos com links para repositórios/demos
-* ✅ Exibição de experiências profissionais
-* ✅ Habilidades técnicas organizadas
-* ✅ Área de contato
-* ✅ Layout responsivo e otimizado
+*  Página inicial com apresentação
+*  Seção “Sobre mim” destacando minha trajetória
+*  Listagem de projetos com links para repositórios/demos
+*  Exibição de experiências profissionais
+*  Habilidades técnicas organizadas
+*  Área de contato
+*  Layout responsivo e otimizado
 
 ---
 
-## 📬 Contato
+##  Contato
 
 Você pode me encontrar em:
 
-* 🌐 Portfólio: [samuellaguiar.vercel.app](https://samuellaguiar.vercel.app/)
-* 💼 LinkedIn:[https://www.linkedin.com/in/samuell-aguiar/](https://www.linkedin.com/in/samuell-aguiar/)
-* 🐙 GitHub: [SamuellAguiar (Samuell Aguiar)](https://github.com/SamuellAguiar)
-* 📧 Email: [samuellcarlosaguiar@gmail.com](mailto:seuemail@exemplo.com)
+*  Portfólio: [samuellaguiar.vercel.app](https://samuellaguiar.vercel.app/)
+*  LinkedIn:[https://www.linkedin.com/in/samuell-aguiar/](https://www.linkedin.com/in/samuell-aguiar/)
+*  GitHub: [SamuellAguiar (Samuell Aguiar)](https://github.com/SamuellAguiar)
+*  Email: [samuellcarlosaguiar@gmail.com](mailto:seuemail@exemplo.com)
 
 ---
 
-## 📄 Licença
+##  Licença
 
 Este projeto está sob a licença  **MIT** .
 
