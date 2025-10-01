@@ -5,7 +5,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ChatIcon from '@mui/icons-material/Chat';
-import React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Home() {
