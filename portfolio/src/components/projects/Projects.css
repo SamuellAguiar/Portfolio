@@ -76,7 +76,6 @@
      transform: scale(1.1);
 }
 
-/* Ajuste do grid para telas médias (tablets) */
 @media (max-width: 900px) {
      .projects-grid {
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -93,7 +92,6 @@
      }
 }
 
-/* Ajustes para telas pequenas (celulares) */
 @media (max-width: 600px) {
      .projects-grid {
           grid-template-columns: 1fr;
@@ -126,7 +124,6 @@
      }
 }
 
-/* Ajuste para a imagem do projeto em telas pequenas para evitar estourar */
 .project-image {
      max-height: 180px;
      width: 100%;
