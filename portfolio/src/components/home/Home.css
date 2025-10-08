@@ -3,7 +3,6 @@
      justify-content: flex-end;
      align-items: center;
      padding-left: 120px;
-     /* Mais afastado da borda */
      height: 80vh;
      box-sizing: border-box;
 }
@@ -63,9 +62,7 @@
 
 .photo-placeholder {
      width: 400px;
-     /* Define a largura */
      height: 400px;
-     /* Define a altura */
      aspect-ratio: 1/1;
      display: flex;
      justify-content: center;

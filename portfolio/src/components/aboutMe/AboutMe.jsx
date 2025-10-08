@@ -1,6 +1,5 @@
-import React from 'react';
 import './AboutMe.css';
-import AboutImage from '/Me2.jpeg'; // substitua com o caminho correto
+import AboutImage from '/Me2.jpeg'; 
 
 export default function AboutMe() {
      return (
