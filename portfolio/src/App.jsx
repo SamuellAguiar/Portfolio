@@ -6,7 +6,7 @@ import AboutMe from './components/aboutMe/AboutMe';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ScrollToTop from './components/whatsButton/WhatsButton';
 
 function App() {
 
