@@ -6,12 +6,14 @@ import AboutMe from './components/aboutMe/AboutMe';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
 
   return (
     <>
       <div>
+        <ScrollToTop />
         <NavBar />
         <Home />
         <SkillsSection />
