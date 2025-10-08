@@ -1,0 +1,28 @@
+.scroll-to-top.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(37, 211, 102, 0.7); /* verde WhatsApp transparente */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.scroll-to-top.whatsapp-btn:hover {
+    background-color: #25d366;
+    color: #fff;
+    transform: scale(1.1);
+}
