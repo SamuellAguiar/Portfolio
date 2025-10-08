@@ -2,7 +2,7 @@ import React from 'react';
 import './Skills.css';
 import {
      SiPython, SiHtml5, SiCss3, SiJavascript, SiReact,
-     SiNodedotjs, SiPhp, SiMysql, SiWordpress
+     SiNodedotjs, SiGithub, SiMysql, SiJupyter
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 
@@ -13,10 +13,10 @@ const skills = [
      { name: 'React', icon: <SiReact /> },
      { name: 'Node.js', icon: <SiNodedotjs /> },
      { name: 'Python', icon: <SiPython /> },
+     { name: 'Jupyter', icon: <SiJupyter /> },
      { name: 'Java', icon: <DiJava /> },
-     { name: 'PHP', icon: <SiPhp /> },
      { name: 'MySQL', icon: <SiMysql /> },
-     { name: 'WordPress', icon: <SiWordpress /> },
+     { name: 'GitHub', icon: <SiGithub /> },
 ];
 
 function Skills() {
