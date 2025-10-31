@@ -39,12 +39,6 @@ function Contact() {
                               placeholder="Insira o seu e-mail"
                               required
                          />
-                         <input
-                              type="text"
-                              name="title"
-                              placeholder="Assunto da mensagem"
-                              required
-                         />
                          <textarea
                               name="message"
                               placeholder="Como posso te ajudar?"
