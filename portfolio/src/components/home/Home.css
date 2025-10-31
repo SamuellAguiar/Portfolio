@@ -81,14 +81,16 @@
 
 @media (max-width: 1024px) {
      .about-section {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 2rem 1rem;
-          text-align: center;
-          height: auto;
-          padding-left: 0 !important;
-          padding-right: 0 !important;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              /* manter padding lateral no mobile para evitar que o texto fique colado na borda */
+              padding: 2rem 1rem;
+              /* adicionar safe-area para iOS notch/rounded corners */
+              padding-left: calc(1rem + env(safe-area-inset-left));
+              padding-right: calc(1rem + env(safe-area-inset-right));
+              text-align: center;
+              height: auto;
      }
 
      .about-text {
