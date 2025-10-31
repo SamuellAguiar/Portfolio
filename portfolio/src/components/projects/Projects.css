@@ -15,6 +15,29 @@
      font-weight: 700;
 }
 
+.projects-actions {
+     text-align: center;
+     margin-top: 2rem;
+}
+
+.github-button {
+     display: inline-block;
+     background-color: #24292e; /* cor GitHub escura */
+     color: #fff;
+     padding: 0.5rem 1rem;
+     border-radius: 0.5rem;
+     text-decoration: none;
+     font-weight: 600;
+     transition: transform 0.15s, background-color 0.15s;
+}
+
+.github-button:hover,
+.github-button:focus {
+     transform: translateY(-3px);
+     background-color: #3b4045;
+     outline: none;
+}
+
 .projects-grid {
      display: grid;
      gap: 3rem;
