@@ -21,7 +21,7 @@ function Projects() {
                description:
                     "Desenvolvi uma landing page profissional para duas dentistas, com foco na divulgação do curso que estão criando juntas. A aplicação inclui seções dedicadas à introdução do curso, apresentação das profissionais, depoimentos e um formulário de contato funcional para captação de interessados. Foram utilizadas tecnologias como React, CSS e Vite.",
                image: "/project2.png",
-               link: "https://site-kelly.vercel.app/"
+               link: "https://kellyelais.com/"
           },
           {
                id: "02",
@@ -37,6 +37,7 @@ function Projects() {
                description:
                     "Desenvolvi um clone fiel da tela de login do Instagram utilizando HTML, CSS e JavaScript, com foco na reprodução visual e funcional da interface original. O projeto visa demonstrar habilidades em construção de interfaces responsivas, organização de layout com CSS e manipulação básica de eventos com JavaScript. ",
                image: "/project3.png",
+               link: "https://github.com/SamuellAguiar/Login-Instagram"
           },
      ];
 
