@@ -33,11 +33,11 @@ function Projects() {
           },
           {
                id: "03",
-               title: "📲 Clone da Tela de Login do Instagram",
+               title: "💻 Minha Placa, Minha Vida ",
                description:
-                    "Desenvolvi um clone fiel da tela de login do Instagram utilizando HTML, CSS e JavaScript, com foco na reprodução visual e funcional da interface original. O projeto visa demonstrar habilidades em construção de interfaces responsivas, organização de layout com CSS e manipulação básica de eventos com JavaScript. ",
+                    "Desenvolvi uma landing page moderna e responsiva voltada para conversão de clientes em uma assistência técnica especializada em micro-soldagem e manutenção de placas eletrônicas. A aplicação foi estruturada seguindo o modelo AIDA, com foco em comunicação clara, geração de leads via WhatsApp e ótima experiência do usuário. O projeto foi desenvolvido com React, Vite e Tailwind CSS, priorizando componentização, manutenibilidade e desacoplamento da lógica de negócio da interface. ",
                image: "/project3.png",
-               link: "https://github.com/SamuellAguiar/Login-Instagram"
+               link: "https://minha-placa-minha-vida.vercel.app/"
           },
      ];
 
