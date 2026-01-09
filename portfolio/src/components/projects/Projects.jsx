@@ -52,7 +52,6 @@ function Projects() {
           },
      ];
 
-     // Detectar tamanho da tela para definir quantos itens mostrar
      useEffect(() => {
           const handleResize = () => {
                if (window.innerWidth < 900) {
@@ -67,7 +66,6 @@ function Projects() {
           return () => window.removeEventListener('resize', handleResize);
      }, []);
 
-     // Próximo slide
      const nextSlide = () => {
           setCurrentIndex((prevIndex) => {
                if (prevIndex + itemsPerPage >= projects.length) {
