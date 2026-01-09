@@ -2,6 +2,8 @@
      background-color: #000;
      color: #fff;
      padding: 4rem 2rem;
+     overflow: hidden;
+     /* Evita rolagem horizontal da página */
 }
 
 .projects-title {
@@ -15,141 +17,144 @@
      font-weight: 700;
 }
 
-.projects-actions {
-     text-align: center;
-     margin-top: 2rem;
-}
-
-.github-button {
-     display: inline-block;
-     background-color: #24292e; /* cor GitHub escura */
-     color: #fff;
-     padding: 0.5rem 1rem;
-     border-radius: 0.5rem;
-     text-decoration: none;
-     font-weight: 600;
-     transition: transform 0.15s, background-color 0.15s;
-}
-
-.github-button:hover,
-.github-button:focus {
-     transform: translateY(-3px);
-     background-color: #3b4045;
-     outline: none;
-}
-
-.projects-grid {
-     display: grid;
-     gap: 3rem;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* --- Estilos do Carrossel --- */
+.carousel-container {
+     position: relative;
      max-width: 1200px;
      margin: 0 auto;
+     display: flex;
+     align-items: center;
+     gap: 1rem;
 }
 
+.carousel-track-container {
+     overflow: hidden;
+     /* Esconde os cards que estão fora da visão */
+     width: 100%;
+}
+
+.carousel-track {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+     /* Animação suave */
+     width: 100%;
+}
+
+/* Botões de navegação */
+.nav-button {
+     background-color: rgba(255, 255, 255, 0.1) !important;
+     z-index: 2;
+     flex-shrink: 0;
+}
+
+.nav-button:hover {
+     background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* --- Card do Projeto --- */
 .project-card {
+     padding: 0 10px;
+     /* Espaçamento entre os slides */
+     box-sizing: border-box;
+}
+
+.card-inner {
+     background-color: #111;
+     padding: 1.5rem;
+     border-radius: 0.75rem;
+     height: 100%;
+     /* Garante que todos tenham a mesma altura */
      display: flex;
      flex-direction: column;
      gap: 1rem;
-     background-color: #111;
-     padding: 1rem;
-     border-radius: 0.75rem;
+     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-image {
      width: 100%;
-     border-radius: 0.5rem;
+     height: 200px;
+     /* Altura fixa para uniformidade */
      object-fit: cover;
+     border-radius: 0.5rem;
 }
 
 .project-content {
      display: flex;
      flex-direction: column;
      gap: 0.5rem;
-}
-
-.project-id {
-     font-size: 1.5rem;
-     font-weight: 700;
-     color: #fff;
+     flex-grow: 1;
 }
 
 .project-title {
-     font-size: 1.125rem;
+     font-size: 1.25rem;
      font-weight: 600;
      color: #fff;
-     justify-content: center;
-     display: flex;
+     margin: 0;
 }
 
 .project-description {
      font-size: 0.9rem;
      color: #aaa;
+     line-height: 1.5;
+     /* Limita o texto a 4 linhas para não estourar o card */
+     display: -webkit-box;
+     -webkit-line-clamp: 4;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
 }
 
 .project-link {
-     font-size: 1.25rem;
+     font-size: 1.5rem;
      color: #fff;
      text-decoration: none;
      margin-top: auto;
+     /* Empurra o link para o final do card */
+     align-self: flex-start;
      transition: transform 0.2s;
-     width: fit-content;
 }
 
 .project-link:hover {
-     transform: scale(1.1);
+     transform: scale(1.2) translate(5px, -5px);
 }
 
+/* --- Botão GitHub Global --- */
+.projects-actions {
+     text-align: center;
+     margin-top: 3rem;
+}
+
+/* --- Responsividade --- */
 @media (max-width: 900px) {
-     .projects-grid {
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 2rem;
-     }
-
-     .projects-section {
-          padding: 3rem 1.5rem;
-     }
-
      .projects-title {
           font-size: 1.75rem;
-          margin-bottom: 2.5rem;
+     }
+
+     .carousel-container {
+          padding: 0;
+          /* Remove padding extra no mobile */
+     }
+
+     .nav-button {
+          /* No mobile, podemos esconder as setas se quiser economizar espaço, 
+           mas vamos mantê-las menores */
+          padding: 5px !important;
      }
 }
 
 @media (max-width: 600px) {
-     .projects-grid {
-          grid-template-columns: 1fr;
-          gap: 1.5rem;
-     }
-
      .projects-section {
-          padding: 2rem 1rem;
-     }
-
-     .projects-title {
-          font-size: 1.5rem;
-          margin-bottom: 2rem;
+          padding: 3rem 1rem;
      }
 
      .project-card {
-          padding: 0.75rem;
+          padding: 0 5px;
+     }
+
+     .card-inner {
+          padding: 1rem;
      }
 
      .project-title {
-          font-size: 1rem;
-     }
-
-     .project-description {
-          font-size: 0.85rem;
-     }
-
-     .project-link {
           font-size: 1.1rem;
      }
-}
-
-.project-image {
-     max-height: 180px;
-     width: 100%;
-     object-fit: cover;
-     border-radius: 0.5rem;
 }
