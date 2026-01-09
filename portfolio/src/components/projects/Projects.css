@@ -3,7 +3,6 @@
      color: #fff;
      padding: 4rem 2rem;
      overflow: hidden;
-     /* Evita rolagem horizontal da página */
 }
 
 .projects-title {
@@ -17,7 +16,6 @@
      font-weight: 700;
 }
 
-/* --- Estilos do Carrossel --- */
 .carousel-container {
      position: relative;
      max-width: 1200px;
@@ -29,18 +27,15 @@
 
 .carousel-track-container {
      overflow: hidden;
-     /* Esconde os cards que estão fora da visão */
      width: 100%;
 }
 
 .carousel-track {
      display: flex;
      transition: transform 0.5s ease-in-out;
-     /* Animação suave */
      width: 100%;
 }
 
-/* Botões de navegação */
 .nav-button {
      background-color: rgba(255, 255, 255, 0.1) !important;
      z-index: 2;
@@ -51,10 +46,8 @@
      background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-/* --- Card do Projeto --- */
 .project-card {
      padding: 0 10px;
-     /* Espaçamento entre os slides */
      box-sizing: border-box;
 }
 
@@ -63,7 +56,6 @@
      padding: 1.5rem;
      border-radius: 0.75rem;
      height: 100%;
-     /* Garante que todos tenham a mesma altura */
      display: flex;
      flex-direction: column;
      gap: 1rem;
@@ -73,7 +65,6 @@
 .project-image {
      width: 100%;
      height: 200px;
-     /* Altura fixa para uniformidade */
      object-fit: cover;
      border-radius: 0.5rem;
 }
@@ -96,7 +87,6 @@
      font-size: 0.9rem;
      color: #aaa;
      line-height: 1.5;
-     /* Limita o texto a 4 linhas para não estourar o card */
      display: -webkit-box;
      -webkit-line-clamp: 4;
      -webkit-box-orient: vertical;
@@ -108,7 +98,6 @@
      color: #fff;
      text-decoration: none;
      margin-top: auto;
-     /* Empurra o link para o final do card */
      align-self: flex-start;
      transition: transform 0.2s;
 }
@@ -117,7 +106,6 @@
      transform: scale(1.2) translate(5px, -5px);
 }
 
-/* --- Botão GitHub Global --- */
 .projects-actions {
      text-align: center;
      margin-top: 3rem;
@@ -131,12 +119,9 @@
 
      .carousel-container {
           padding: 0;
-          /* Remove padding extra no mobile */
      }
 
      .nav-button {
-          /* No mobile, podemos esconder as setas se quiser economizar espaço, 
-           mas vamos mantê-las menores */
           padding: 5px !important;
      }
 }
