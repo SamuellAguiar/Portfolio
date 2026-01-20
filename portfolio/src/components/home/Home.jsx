@@ -21,57 +21,27 @@ function Home() {
                          FullStack <span className="outline">Developer</span>
                     </h2>
 
-                    <p>
-                         Sou um desenvolvedor apaixonado por criar experiências digitais. Tenho foco em
-                         interfaces modernas e responsivas, com atenção aos detalhes e usabilidade.
-                    </p>
+                    <div className="description">
+                         <p>
+                              Sou graduando em <strong>Sistemas de Informação pela UFOP</strong> e desenvolvedor apaixonado por transformar ideias em experiências digitais. Meu foco está na criação de interfaces modernas, responsivas e acessíveis, unindo design e funcionalidade.
+                         </p>
+                         <p>
+                              Sou movido por desafios técnicos e pelo aprendizado contínuo, buscando evoluir a cada projeto através de uma visão analítica e colaborativa.
+                         </p>
+                    </div>
 
                     <Stack
                          direction={isMobile ? 'column' : 'row'}
                          spacing={2}
                          sx={{
-                              marginTop: '1.5rem',
+                              marginTop: '2rem',
                               alignItems: 'center',
                          }}
                     >
-                         <Button
-                              variant="outlined"
-                              startIcon={<GitHubIcon />}
-                              href="https://github.com/SamuellAguiar"
-                              target="_blank"
-                              sx={buttonStyle}
-                         >
-                              GitHub
-                         </Button>
-
-                         <Button
-                              variant="outlined"
-                              startIcon={<InstagramIcon />}
-                              href="https://www.instagram.com/samuell.ag/"
-                              target="_blank"
-                              sx={buttonStyle}
-                         >
-                              Instagram
-                         </Button>
-
-                         <Button
-                              variant="outlined"
-                              startIcon={<LinkedInIcon />}
-                              href="https://www.linkedin.com/in/samuell-aguiar/"
-                              target="_blank"
-                              sx={buttonStyle}
-                         >
-                              LinkedIn
-                         </Button>
-
-                         <Button
-                              variant="outlined"
-                              startIcon={<ChatIcon />}
-                              href="#contact"
-                              sx={buttonStyle}
-                         >
-                              Contato
-                         </Button>
+                         <Button variant="outlined" startIcon={<GitHubIcon />} href="https://github.com/SamuellAguiar" target="_blank" sx={buttonStyle}> GitHub </Button>
+                         <Button variant="outlined" startIcon={<InstagramIcon />} href="https://www.instagram.com/samuell.ag/" target="_blank" sx={buttonStyle}> Instagram </Button>
+                         <Button variant="outlined" startIcon={<LinkedInIcon />} href="https://www.linkedin.com/in/samuell-aguiar/" target="_blank" sx={buttonStyle}> LinkedIn </Button>
+                         <Button variant="outlined" startIcon={<ChatIcon />} href="#contact" sx={buttonStyle}> Contato </Button>
                     </Stack>
                </div>
 
