@@ -1,9 +1,12 @@
 import './Skills.css';
 import {
      SiPython, SiHtml5, SiCss3, SiJavascript, SiReact,
-     SiNodedotjs, SiGithub, SiMysql, SiJupyter
+     SiNodedotjs, SiGithub, SiMysql, SiJupyter, SiPhp
 } from "react-icons/si";
-import { DiJava } from "react-icons/di";
+import { DiJava, DiLinux } from "react-icons/di";
+import { FaWindows, FaGitAlt } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+
 
 const skills = [
      { name: 'HTML', icon: <SiHtml5 /> },
@@ -11,11 +14,16 @@ const skills = [
      { name: 'JavaScript', icon: <SiJavascript /> },
      { name: 'React', icon: <SiReact /> },
      { name: 'Node.js', icon: <SiNodedotjs /> },
+     { name: 'Java', icon: <DiJava /> },
+     { name: 'PHP', icon: <SiPhp /> },
      { name: 'Python', icon: <SiPython /> },
      { name: 'Jupyter', icon: <SiJupyter /> },
-     { name: 'Java', icon: <DiJava /> },
      { name: 'MySQL', icon: <SiMysql /> },
+     { name: 'Git', icon: <FaGitAlt /> },
      { name: 'GitHub', icon: <SiGithub /> },
+     { name: 'VS Code', icon: <VscVscode /> },
+     { name: 'Windows', icon: <FaWindows /> },
+     { name: 'Linux', icon: <DiLinux /> },
 ];
 
 function Skills() {

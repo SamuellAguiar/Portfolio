@@ -1,16 +1,14 @@
 .skills-section {
-     padding-bottom: 100px;
+     padding: 80px 0 100px;
      text-align: center;
+     background-color: #0d0d0d;
 }
 
 .skills-title {
      font-size: 32px;
      font-weight: bold;
      margin-bottom: 40px;
-}
-
-.skills-title span {
-     color: #000;
+     color: #fff;
 }
 
 .skills-grid {
@@ -23,7 +21,7 @@
 }
 
 .skill-card {
-     border: 2px solid #ccc;
+     border: 2px solid #333;
      border-radius: 10px;
      padding: 24px 16px;
      width: 150px;
@@ -32,62 +30,54 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-     transition: transform 0.2s ease, box-shadow 0.2s ease;
-     background-color: #fff;
+     background-color: #1a1a1a;
+     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .skill-card:hover {
-     background-color: #000;
-     color: #fff;
-     border-color: #000;
+     background-color: #fff;
+     color: #000;
+     border-color: #fff;
      transform: scale(1.07);
-     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-}
-
-.skill-card:hover .skill-icon {
-     color: #fff;
-}
-
-.skill-card:hover p {
-     color: #fff;
+     box-shadow: 0 8px 24px rgba(255, 255, 255, 0.12);
 }
 
 .skill-icon {
      font-size: 40px;
-     color: #000;
+     color: #fff;
      margin-bottom: 12px;
+     transition: color 0.2s ease;
 }
 
 .skill-card p {
      font-size: 15px;
      font-weight: 500;
      margin: 0;
-     color: #333;
+     color: #fff;
+}
+
+.skill-card:hover .skill-icon,
+.skill-card:hover p {
+     color: #000;
 }
 
 @media (max-width: 768px) {
      .skills-title {
           font-size: 24px;
-          margin-bottom: 30px;
-          padding: 0 1rem;
      }
 
      .skills-grid {
           grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
           gap: 20px;
-          padding: 0 1rem;
      }
 
      .skill-card {
           width: 120px;
           height: 120px;
-          padding: 16px 12px;
      }
 
      .skill-icon {
           font-size: 32px;
-          margin-bottom: 8px;
      }
 
      .skill-card p {
@@ -103,13 +93,5 @@
      .skill-card {
           width: 100px;
           height: 100px;
-     }
-
-     .skill-icon {
-          font-size: 28px;
-     }
-
-     .skill-card p {
-          font-size: 12px;
      }
 }
