@@ -8,7 +8,7 @@ const experiences = [
           role: 'Desenvolvedor WEB Front-End',
           date: 'Ago 2022 - Abr 2023',
           description:
-               'Atuei como desenvolvedor front-end na Visão Jr., empresa júnior da faculdade, focada em soluções tecnológicas para clientes reais. Fui responsável pela criação e manutenção de interfaces web, garantindo responsividade, usabilidade e acessibilidade em diferentes dispositivos.Desenvolvi páginas utilizando HTML, CSS e JavaScript, além de implementar e gerenciar sites em WordPress com o plugin Elementor. Trabalhei em equipe utilizando metodologias ágeis, participando ativamente de sprints e reuniões seguindo o framework Scrum. Também padronizei componentes reutilizáveis, contribuindo para a escalabilidade e manutenção eficiente dos projetos da empresa.',
+               'Atuei como desenvolvedor front-end na Visão Jr., empresa júnior da faculdade, focada em soluções tecnológicas para clientes reais. Fui responsável pela criação e manutenção de interfaces web, garantindo responsividade, usabilidade e acessibilidade em diferentes dispositivos. Desenvolvi páginas utilizando HTML, CSS e JavaScript, além de implementar e gerenciar sites em WordPress com o plugin Elementor. Trabalhei em equipe utilizando metodologias ágeis, participando ativamente de sprints e reuniões seguindo a metodologia Scrum.',
           icon: <BusinessIcon />,
      },
 ];
@@ -16,7 +16,7 @@ const experiences = [
 export default function Experience() {
      return (
           <section className="experience-section" id="experience">
-               <h2 className="experience-title"><span>Experiencia</span></h2>
+               <h2 className="experience-title"><span>Experiência</span></h2>
                <div className="experience-list">
                     {experiences.map((exp) => (
                          <div className="experience-card" key={exp.id}>
