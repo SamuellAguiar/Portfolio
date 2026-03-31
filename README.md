@@ -6,14 +6,14 @@
 
 ---
 
-## ✨ Sobre o Projeto
+## Sobre o Projeto
 
 Este projeto consiste em um **portfólio moderno, responsivo e dinâmico**, criado com o objetivo de **apresentar meus trabalhos, conhecimentos e trajetória profissional** de forma clara e visualmente agradável.  
 O design foi desenvolvido com foco em **usabilidade e identidade pessoal**, combinando elegância e leveza para transmitir autenticidade e profissionalismo.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -24,14 +24,14 @@ O projeto foi desenvolvido com as seguintes tecnologias:
   
 ---
 
-## 😄 Veja o site
+## Veja o site
 
 Acesse o portfólio online em:  
 👉 [**samuellaguiar.vercel.app**](https://samuellaguiar.vercel.app/)
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 
 Siga as etapas abaixo para rodar o projeto localmente:
 
@@ -57,7 +57,7 @@ npm run dev
 
 ---
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
 ```
 📦 src
 ┣ 📂assets
@@ -81,12 +81,12 @@ npm run dev
 
 ---
 
-## 📝 Licença
+## Licença
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
 
 ---
 
-## 💎 Créditos
+## Créditos
 
-Desenvolvido com 💙 por Samuell Aguiar
+Desenvolvido por Samuell Aguiar
