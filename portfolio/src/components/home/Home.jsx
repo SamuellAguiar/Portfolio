@@ -39,8 +39,8 @@ function Home() {
                          }}
                     >
                          <Button variant="outlined" startIcon={<GitHubIcon />} href="https://github.com/SamuellAguiar" target="_blank" sx={buttonStyle}> GitHub </Button>
-                         <Button variant="outlined" startIcon={<InstagramIcon />} href="https://www.instagram.com/samuell.ag/" target="_blank" sx={buttonStyle}> Instagram </Button>
                          <Button variant="outlined" startIcon={<LinkedInIcon />} href="https://www.linkedin.com/in/samuell-aguiar/" target="_blank" sx={buttonStyle}> LinkedIn </Button>
+                         <Button variant="outlined" startIcon={<InstagramIcon />} href="https://www.instagram.com/samuell.ag/" target="_blank" sx={buttonStyle}> Instagram </Button>
                          <Button variant="outlined" startIcon={<ChatIcon />} href="#contact" sx={buttonStyle}> Contato </Button>
                     </Stack>
                </div>
