@@ -45,10 +45,17 @@ function Projects() {
           },
           {
                id: "04",
-               title: "Sentinel - Sistema de Registro de Ocorrências ",
+               title: "Sentinel - Sistema de Registro de Ocorrências",
                description: "Desenvolvi o Sentinel, uma plataforma web voltada para a segurança universitária, com foco no registro anônimo de ocorrências e no monitoramento de áreas de risco pelo campus.",
                image: "/project4.png", 
                link: "https://trabalho-bd-ii.vercel.app/"
+          },
+          {
+               id: "05",
+               title: "UseLume - Linktree",
+               description: "Desenvolvi o linktree da UseLume, uma página simples e elegante para o direcionamento de usuários para o whatsapp da loja.",
+               image: "/project5.png",
+               link: "https://uselume.vercel.app/"
           },
      ];
 
