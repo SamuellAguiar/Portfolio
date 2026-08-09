@@ -1,0 +1,3 @@
+export default function SkillsSection({ skills, onSkillSelect }) {
+  return <section className="section expertise-section"><div className="section-heading centered-heading"><p className="eyebrow">04 &middot; Expertise</p><h2>Habilidades que uso<br />para dar vida a ideias.</h2></div><ul className="skills-list" aria-label="Habilidades">{skills.map((skill, index) => <li key={skill.name}><button type="button" onClick={() => onSkillSelect(skill)} aria-label={`Ver detalhes sobre ${skill.name}`}><span>{String(index + 1).padStart(2, '0')}</span>{skill.name}<b aria-hidden="true">+</b></button></li>)}</ul></section>
+}

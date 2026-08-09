@@ -1,0 +1,129 @@
+.modal-backdrop {
+     position: fixed;
+     inset: 0;
+     z-index: 50;
+     display: grid;
+     place-items: center;
+     padding: 20px;
+     background: rgba(3, 19, 24, .72);
+     backdrop-filter: blur(4px)
+}
+
+.details-modal {
+     width: min(100%, 650px);
+     max-height: min(720px, calc(100vh - 40px));
+     overflow: auto;
+     position: relative;
+     padding: 45px;
+     background: var(--surface);
+     border: 1px solid var(--line);
+     box-shadow: 0 24px 70px rgba(0, 0, 0, .3)
+}
+
+.details-modal h2 {
+     font-size: clamp(36px, 5vw, 56px);
+     margin-bottom: 22px;
+     line-height: 1
+}
+
+.modal-close {
+     position: absolute;
+     right: 15px;
+     top: 15px;
+     width: 34px;
+     height: 34px;
+     border: 1px solid var(--line);
+     border-radius: 50%;
+     background: transparent;
+     color: var(--ink);
+     font-size: 25px;
+     line-height: 1;
+     cursor: pointer
+}
+
+.modal-intro {
+     color: var(--muted);
+     font-size: 16px;
+     line-height: 1.8
+}
+
+.modal-list {
+     padding: 0;
+     margin: 25px 0;
+     list-style: none;
+     display: grid;
+     gap: 10px
+}
+
+.modal-list li {
+     padding-left: 20px;
+     position: relative;
+     font-size: 14px
+}
+
+.modal-list li:before {
+     content: '\2022';
+     position: absolute;
+     left: 0;
+     color: var(--teal)
+}
+
+.modal-label {
+     font-family: 'DM Mono', monospace;
+     font-size: 11px;
+     text-transform: uppercase;
+     letter-spacing: .08em;
+     color: #168e91;
+     margin: 28px 0 10px
+}
+
+.modal-links {
+     display: flex;
+     gap: 12px;
+     flex-wrap: wrap;
+     margin-top: 30px
+}
+
+.modal-links .button {
+     font-size: 12px
+}
+
+.modal-links .is-placeholder {
+     padding: 14px 20px;
+     border: 1px solid var(--line)
+}
+
+@media(max-width:720px) {
+     .details-modal {
+          padding: 35px 24px
+     }
+
+     .modal-intro {
+          font-size: 14px
+     }
+}
+
+.contact-options {
+     display: grid;
+     gap: 10px;
+     margin-top: 28px
+}
+
+.contact-options a,
+.contact-options button {
+     width: 100%;
+     border: 1px solid var(--line);
+     background: var(--surface);
+     color: var(--ink);
+     padding: 14px 16px;
+     text-align: left;
+     font: inherit;
+     font-weight: 700;
+     cursor: pointer
+}
+
+.contact-options a:hover,
+.contact-options button:hover {
+     border-color: var(--teal);
+     background: var(--aqua)
+}

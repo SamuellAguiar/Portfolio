@@ -1,0 +1,5 @@
+import ExternalLink from '../ExternalLink'
+
+export default function HeroSection({ profile }) {
+  return <section id="inicio" className="hero section"><div className="hero-copy"><p className="eyebrow">Portfolio &middot; {profile.role}</p><h1>Ola, eu sou <span>{profile.name}.</span></h1><p className="hero-summary">{profile.summary}</p><div className="hero-actions"><a className="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">&darr;</span></a><a className="button button-secondary" href="#contato">Vamos conversar</a></div><p className="availability"><span aria-hidden="true" />{profile.location}</p><div className="social-links" aria-label="Links profissionais"><ExternalLink href={profile.linkedinUrl}>LinkedIn</ExternalLink><ExternalLink href={profile.githubUrl}>GitHub</ExternalLink></div></div><div className="portrait-wrap"><div className="portrait-ring">{profile.photo ? <img src={profile.photo} alt={`Foto de ${profile.name}`} fetchPriority="high" /> : <span>{profile.initials}</span>}</div></div></section>
+}
